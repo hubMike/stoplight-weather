@@ -14,9 +14,45 @@ info:
 servers:
   - url: 'https://api.openweathermap.org/data/2.5'
     description: prod
-paths: {}
+paths:
+  /weather:
+    get:
+      summary: weather
+      tags:
+        - Weather endpoints
+      responses: {}
+      operationId: get-weather
+      description: 'Access current weather data for any location on earth including over 200,000 frequently updaeed based on global models and data from more than 40,000.'
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: zip
+          description: '**Zip code**. Search by zip code. *Example: 42420'
+        - schema:
+            type: string
+          in: query
+          name: units
+          description: '*Example: imperial*. Possible values "standard"'
+      security:
+        - app_id: []
+    parameters: []
 components:
-  schemas: {}
+  schemas:
+    unauthorized_response:
+      title: unauthorized_response
+      type: object
+      properties:
+        id:
+          type: string
+        cod:
+          type:
+            - string
+            - integer
+        message:
+          type: string
+      required:
+        - cod
   securitySchemes:
     app_id:
       name: appid
