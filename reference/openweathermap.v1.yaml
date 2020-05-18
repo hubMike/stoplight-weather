@@ -22,7 +22,7 @@ paths:
         - Weather endpoints
       responses: {}
       operationId: get-weather
-      description: 'Access current weather data for any location on earth including over 200,000 frequently updaeed based on global models and data from more than 40,000.'
+      description: 'Access current weather data for any location on earth including over 200,000 frequently updaeed based on global models and data from more than 40,000...'
       parameters:
         - schema:
             type: string
