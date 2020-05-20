@@ -257,13 +257,6 @@ paths:
           description: '**Mode*. *Example: html. Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default.'
       security:
         - app_id: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties: {}
-            examples: {}
     parameters: []
 components:
   parameters:
@@ -275,7 +268,7 @@ components:
         type: string
   schemas:
     unauthorized_response:
-      title: '401'
+      title: 401
       type: object
       x-examples: {}
       description: Unauthorized
