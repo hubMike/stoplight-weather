@@ -263,6 +263,7 @@ paths:
             schema:
               type: object
               properties: {}
+            examples: {}
     parameters: []
 components:
   parameters:
@@ -274,10 +275,10 @@ components:
         type: string
   schemas:
     unauthorized_response:
-      title: 401
+      title: '401'
       type: object
       x-examples: {}
-      description: ''
+      description: Unauthorized
       properties:
         cod:
           type: integer
