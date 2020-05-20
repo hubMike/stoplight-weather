@@ -268,7 +268,7 @@ components:
         type: string
   schemas:
     unauthorized_response:
-      title: 401
+      title: Unauthorized
       type: object
       x-examples: {}
       description: Unauthorized
