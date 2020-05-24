@@ -145,7 +145,7 @@ paths:
                         id:
                           type: number
                           description: Weather condition id
-                          example: ‘803’
+                          example: 803
                         main:
                           type: string
                           description: '‘Group of weather parameters (Rain, Snow, Extreme etc.)’'
@@ -268,7 +268,7 @@ components:
         type: string
   schemas:
     unauthorized_response:
-      title: Unauthorized
+      title: "401"
       type: object
       x-examples: {}
       description: Unauthorized
